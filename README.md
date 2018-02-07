@@ -1,65 +1,34 @@
-# anyshare-fe-helper README
+# anyshare-fe-helper
 
-This is the README for your extension "anyshare-fe-helper". After writing up a brief description, we recommend including the following sections.
+## 概述
 
-## Features
+快速创建Anyshare Web前端组件骨架结构，支持以下组件创建：
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- ShareWebUtil 
+- ShareWebCore 
+- ShareWebUI 
+- ShareWebComponents 
+- ShareWebConsole
 
-For example if there is an image subfolder under your extension project workspace:
+## 使用方法
+`Ctrl + Shift + P`打开VSCode命令窗口，输入anyshare
 
-\!\[feature X\]\(images/feature-x.png\)
+![使用方法截图](images/snap.gif)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
+## 扩展设置
 
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+* `Anyshare.ShareWebNewDir`: 自定义 ShareWebNew 根目录路径
+* `AnyShare.templateDir`: 自定义 模板目录 路径
 
-## Known Issues
+## 已知问题
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- 暂不支持同时创建两个平台的组件
+- 暂不支持创建子组件
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
+## 发布记录
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+实现基础功能

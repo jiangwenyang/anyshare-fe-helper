@@ -1,9 +1,9 @@
 {
     "name": "anyshare-fe-helper",
     "displayName": "Anyshare-FE-Helper",
-    "description": "Help you do those things that robots should do",
+    "description": "帮助创建AnyShare前端组件基础骨架",
     "version": "0.0.1",
-    "publisher": "anyshare-fe-helper",
+    "publisher": "jiangwenyang",
     "engines": {
         "vscode": "^1.19.0"
     },
@@ -11,13 +11,29 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.newComponent"
     ],
     "main": "./out/extension",
     "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "Anyshare-FE-Helper 设置",
+            "properties": {
+                "Anyshare.ShareWebNewDir": {
+                    "type": "string",
+                    "default": "",
+                    "description": "自定义 ShareWebNew 根目录路径"
+                },
+                "AnyShare.templateDir": {
+                    "type": "string",
+                    "default": "",
+                    "description": "自定义模板目录路径"
+                }
+            }
+        },
         "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
+            "command": "extension.newComponent",
+            "title": "AnyShare : create new componet"
         }]
     },
     "scripts": {
@@ -28,9 +44,13 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^9.4.0",
         "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "vscode": "^1.1.6"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:jiangwenyang/anyshare-fe-helper.git"
     }
 }
