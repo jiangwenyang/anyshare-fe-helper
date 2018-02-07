@@ -2,7 +2,7 @@
     "name": "anyshare-fe-helper",
     "displayName": "Anyshare-FE-Helper",
     "description": "帮助创建AnyShare前端组件基础骨架",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "jiangwenyang",
     "engines": {
         "vscode": "^1.19.0"
